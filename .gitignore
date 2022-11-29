@@ -1,5 +1,5 @@
 # compiled output
-*/dist
+/products/dist
 
 # dependencies
-*/node_modules
+/products/node_modules/
