@@ -15,4 +15,5 @@ vendors...faker.js - a processed version of faker lib ( that can be run in the b
 
 ## Project structure
 
-- index.js and bootstrap.js are both required in container because it allows webpack to load dependencies before executing the code (inside bootstrap.js)
+- index.js and bootstrap.js are both required it allows webpack to load dependencies before executing the code (inside bootstrap.js)
+- shared in webpack is used to define the shared dependencies; webpack will only once the package if they have the same major version  
