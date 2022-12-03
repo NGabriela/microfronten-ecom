@@ -9,7 +9,10 @@ module.exports = {
         new ModuleFederationPlugin({
             name: 'container', //not used in the case of the container
             filename: 'remoteEntry.js',
-            remotes: {products: 'products@http://localhost:8081/remoteEntry.js'}
+            remotes: {
+                products: 'products@http://localhost:8081/remoteEntry.js',
+                cart: 'cart@http://localhost:8082/remoteEntry.js'
+            }
             /** products key is referenced by products/ProductsIndex,
              * products inside the string matches the name in products web.config
              * url for remote entry file*/
